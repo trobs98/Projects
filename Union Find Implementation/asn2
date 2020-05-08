@@ -1,0 +1,13 @@
+#Name: Tyler Roberts
+#Student Number: 250922271
+
+#!/bin/bash
+
+IFS= read -t 0.01 -r -d '' indata
+
+[[ -n $indata ]] && printf "%s" "$indata" >file
+
+javac asn2.java
+java asn2 file
+
+rm file
