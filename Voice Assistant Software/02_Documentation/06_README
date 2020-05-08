@@ -1,0 +1,77 @@
+HOW TO BUILD PROJECT
+
+------------------------------------------------------------
+requirements:
+	1. speechsdk should be in home directory of pi
+
+------------------------------------------------------------
+
+cd speechsdk 
+
+export SPEECHSDK_ROOT="$HOME/speechsdk"
+
+g++ main_speech_to_text.cpp team44/Alarm.cpp team44/todo.cpp team44/GetDate.cpp team44/GetTime.cpp team44/math3307.cpp team44/orchestration.cpp -o askSomething -I "$SPEECHSDK_ROOT/include/cxx_api" -I "$SPEECHSDK_ROOT/include/c_api" --std=c++14 -lpthread -lMicrosoft.CognitiveServices.Speech.core -L "$SPEECHSDK_ROOT/lib/x86" -l:libasound.so.2
+
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$SPEECHSDK_ROOT/lib/x86"
+
+./askSomething
+
+------------------------------------------------------------
+HOW TO BUILD INDIVIDUAL FILES
+
+------------------------------------------------------------
+Alarm.cpp
+Sets timer and alarm, arguments given mimics voice input
+
+How to run Alarm.cpp:
+g++ Alarm.cpp
+./a.out Timer or Alarm [Seconds]
+
+Example:
+.a.out Timer 5
+
+------------------------------------------------------------
+GetDate.cpp and GetTime.cpp
+
+Gets a Date or a time
+
+
+How to run GetDate.cpp or GetTime.cpp (make sure 
+corresponding header files are in directory):
+
+g++ GetDate.cpp 
+g++ GetTime.cpp
+./a.out
+
+Note:
+can change input in the main function of either files. 
+It specifies the format the commands need to be 
+in as a comment above the main function. 
+
+------------------------------------------------------------
+todo.cpp
+
+keeps track of tasks in a to-do list
+
+How to run todo.cpp
+
+g++ todo.cpp
+./a.out [taskName1] [mm/dd/yyyy] [taskName2] [mm/dd/yyyy]...
+
+Example:
+./a.out meeting 02/30/2019 interview 03/06/2020
+
+------------------------------------------------------------
+math3307.cpp
+
+evaluates mathematical expressions, with the operators +, -, *, /
+
+follows the order of operations
+
+How to run math3307.cpp
+
+g++ math3307.cpp
+
+./a.out "Evaluate ..."
+
+

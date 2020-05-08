@@ -1,0 +1,35 @@
+Time Commands:
+	- What time is it _z_
+		- "right now?" 
+	- What time is it in _x_ _y_
+		- _x_ = any positive number
+		- _y_ = "minutes?", "hours?"
+Alarm Commands:
+	- Set timer for _x_ seconds.
+	- Set alarm for _x_ seconds.  
+Date Commands:
+	- What day _x_ it _y_
+		- _x_ = "is", "was"
+		- _y_ = "tomorrow?", "today?", "yesterday?"
+	- What day was it _num_ _type_ ago?
+		- _num_ = any postive number
+		- _type = "days", "day", "week", "weeks", "year", "years"
+	- What day is it in _num_ _type_
+		- _num_ = any positive number
+		- _type_ = "days?", "day?", "week?", "weeks?", "year?", "years?"
+
+Math Commands:
+        - It can handle addition (plus), subtraction (minus), multiplication (times), and division (over). It handles order of operations correctly as well.
+		- Evaluate 1 plus 1
+		- Evaluate 6 minus 3
+		- Evaluate 2 times 2
+		- Evaluate 6 over 3
+		- Evaluate 1 plus 2 times 6 over 3
+
+To-do List Commands:
+	- Add _x_ on _date_.
+		- _x_ = one word ("laundry, "homework", "dishes", etc.)
+		- _date_ = *month* *day* *year*
+	- What is my To Do List?
+	- Mark _x_ as complete. 
+		- _x_ = one word ("laundry, "homework", "dishes", etc.)
