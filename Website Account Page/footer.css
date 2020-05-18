@@ -1,0 +1,19 @@
+.footer {
+    background-color: rgb(63, 63, 63);
+    padding: 10px;
+    text-align: center;
+}
+
+.footer a {
+    display: inline;
+    color: white;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Color on hover */
+.footer a:hover {
+    background-color: rgb(197, 58, 58);
+    color: black;
+}

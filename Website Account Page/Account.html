@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PickUp and Play</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Link to the css file that will style the account page -->
+    <link href="header.css" rel="stylesheet" type="text/css">
+    <link href="footer.css" rel="stylesheet" type="text/css">
+    <link href="AccountPage.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body onload="initSports()">
+
+ <!--HEADER-->
+  <div class="topNav">
+
+    <!-- These are the individual buttons inside the nav bar -->
+    <a class="inactive">PickUp and Play</a>
+    <a class="active" href="#home">Home</a>
+    <input id="SearchBar" type="text" placeholder="Search">
+    <a id="sign" href="#signIn">Sign-In</a>
+  </div>
+
+  <!--MIDDLE CONTENT-->
+  <div class="contents">
+
+    <!--Block with avatar icon, First name and Last name-->
+    <div id="avatarBlock">
+      <br>
+
+      <!-- place to change avatar icon image -->
+      <img src="account_images/8biticon.jpg" alt="avatar" id="avatar">
+      <br>
+      <br>
+      <div id="inputIcon">
+        <button type="button" id="iconEdit" onclick="editIcon()">Update Icon</button>
+      </div>
+
+      <br>
+      <!--Place to change first name and last name of account-->
+      <h2 class="firstName" id="iconFirst">
+        Tyler
+      </h2>
+      <h2 class="lastName" id="iconLast">
+        Roberts
+      </h2>
+
+    </div>
+
+    <!--Block for all the account information -->
+    <div id="info">
+      <h1>
+        INFORMATION:
+      </h1>
+
+      <!--Where edit button goes to edit the information of an account-->
+      <div id="infoEditArea">
+        <button type="button" id="infoEdit" onclick="editInfo()">Edit</button>
+      </div>
+
+      <dl id="infoList">
+        <dt>Username: </dt>
+        <dd class="username">trober64</dd>
+        <br>
+
+        <dt>First Name: </dt>
+        <dd class="firstName">Tyler</dd>
+        <br>
+
+        <dt>Last Name: </dt>
+        <dd class="lastName">Roberts</dd>
+        <br>
+
+        <dt>Birthdate: </dt>
+        <dd class="birthdate">1998-10-26</dd>
+        <br>
+
+        <dt>Gender: </dt>
+        <dd class="gender">Male</dd>
+        <br>
+
+        <dt>Password: </dt>
+        <dd class="password">*********</dd>
+        <br>
+
+        <dt>Email: </dt>
+        <dd class="email">tyler.r@email.com</dd>
+        <br>
+      </dl>
+
+      <!--Where update button will be loaded when person tries to edit information-->
+      <div id="infoSubmit">
+
+      </div>
+
+      <script src="editInfo.js"></script>
+    </div>
+
+    <div id="favSports">
+
+      <h1>
+        FAVOURITE SPORTS
+      </h1>
+
+      <h3>
+        Your Sports:
+      </h3>
+
+      <div id="mySportsTableLoc">
+        <table id="myTable">
+          <tr>
+            <td>  </td>
+            <td>ICON</td>
+            <td>SPORT NAME</td>
+            <td>SKILL LEVEL</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>
+        Other Sports:
+      </h3>
+      <div id="otherSportsTableLoc">
+        <table id="sportsTable">
+          <tr>
+            <th>  </th>
+            <th>ICON</th>
+            <th>SPORT NAME</th>
+          </tr>
+        </table>
+      </div>
+      <script src="createTable.js"></script>
+    </div>
+
+  </div>
+
+  <!--FOOTER-->
+  <div class="footer">
+      <a href="contact.html">Contact Us</a>
+      <a href="#signIn">Sign-Up</a>
+      <a href="aboutUs.html">About Us</a>
+  </div>
+
+</body>
+</html>

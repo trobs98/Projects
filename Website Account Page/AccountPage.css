@@ -1,0 +1,88 @@
+@media (min-width: 601px) {
+  .contents {
+    display: grid;
+  }
+
+    .contents img {
+      border-radius: 50%;
+      border: 3px solid black;
+      /*Probly change these*/
+      width: 200px;
+      height: 200px;
+    }
+
+    .contents #avatarBlock {
+      box-sizing: border-box;
+      border: 1px solid black;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      text-align: center;
+    }
+    .contents #iconEdit {
+      float: right;
+      margin-right: 20px;
+    }
+
+    .contents #info {
+      box-sizing: border-box;
+      border: 1px solid black;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+      .contents #info ul {
+        list-style-type: none;
+      }
+
+    .contents #info button{
+      float:right;
+      margin-right:20px;
+    }
+    .contents #favSports button{
+      float:left;
+      margin-right:20px;
+      padding-bottom:8px;
+      border-color:black;
+      border-width:2px;
+    }
+
+      .contents #favSports {
+        box-sizing: border-box;
+        border: 1px solid black;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+
+
+      .contents #favSports tr, th, td{
+        border: 1px solid black;
+      }
+
+    .contents #info dt {
+      float: left;
+      clear: left;
+      margin-right: 5px;
+      font-weight: bold;
+    }
+    .contents #info dd {
+      margin-left: 0px;
+    }
+    .contents #mySportsTableLoc, #otherSportsTableLoc{
+      overflow:hidden;
+      overflow-y: scroll;
+      height:165px;
+      border: 1px solid black;
+    }
+
+}
+@media (max-width: 600px){
+  .contents #favSports{
+
+  }
+}
