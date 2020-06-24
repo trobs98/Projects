@@ -1,0 +1,7 @@
+Thesis Project:
+
+- Project on Lidar temperature retrieval using Bayesian Deep Learning including code, thesis report and thesis presentation
+- Used MATLAB for data creation and retrieval
+- Used Python for Machine Learning
+
+Report, presentation and code can be sent by request 
